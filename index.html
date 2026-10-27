@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolarSmart AI - Solar Energy Optimization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>☀️ SolarSmart AI</h1>
+        <p>Intelligent Solar Energy Optimization</p>
+    </header>
+
+    <nav>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#analysis">Energy Analysis</a>
+        <a href="#recommendations">AI Recommendations</a>
+    </nav>
+
+    <main>
+        <section id="dashboard">
+            <h2>Solar Energy Dashboard</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Energy Generated</h3>
+                    <p id="energy">24.5 kWh</p>
+                </div>
+
+                <div class="card">
+                    <h3>Panel Efficiency</h3>
+                    <p id="efficiency">82%</p>
+                </div>
+
+                <div class="card">
+                    <h3>Sunlight Intensity</h3>
+                    <p id="sunlight">850 W/m²</p>
+                </div>
+
+                <div class="card">
+                    <h3>System Status</h3>
+                    <p id="status">Good</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="analysis">
+            <h2>Energy Analysis</h2>
+            <p>Monitor solar panel performance and identify
+                opportunities to improve energy generation.</p>
+
+            <label for="sun">Sunlight Intensity (W/m²)</label>
+            <input type="number" id="sun" value="850" min="0" max="1200">
+
+            <label for="dust">Panel Dust Level (%)</label>
+            <input type="number" id="dust" value="10" min="0" max="100">
+
+            <button onclick="analyzeSolar()">Analyze Performance</button>
+
+            <p id="result">Enter your readings to analyze performance.</p>
+        </section>
+
+        <section id="recommendations">
+            <h2>AI Recommendations</h2>
+            <ul id="tips">
+                <li>Keep solar panels clean.</li>
+                <li>Monitor daily energy generation.</li>
+                <li>Check panel performance regularly.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>SIH Student Innovation Project | SolarSmart AI</p>
+        <p>Promoting Clean and Sustainable Energy</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
